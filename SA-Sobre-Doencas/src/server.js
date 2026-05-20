@@ -1,9 +1,9 @@
 import express from "express";
-export default router;
+import doencasRoutes from "./routes/doenca.routes.js";
+
+const app = express();
 
 app.use(express.json());
-
-const doencasRoutes = require("./routes/doenca.routes");
 
 app.use("/doencas", doencasRoutes);
 
